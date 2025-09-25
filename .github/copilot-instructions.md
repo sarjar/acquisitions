@@ -30,24 +30,31 @@ The Acquisitions project is a Node.js-based application with the following key c
 ## Developer Workflows
 
 ### Installation
+
 Run the following command to install dependencies:
+
 ```bash
 npm install
 ```
 
 ### Running the Application
+
 Start the application with:
+
 ```bash
 npm start
 ```
 
 ### Testing
+
 Tests are not explicitly defined in the current structure. Add tests under a `tests/` directory and use a testing framework like Jest or Mocha.
 
 ### Debugging
+
 Use the `logs/` directory to review application logs. The `logger.js` file in `src/config/` configures logging behavior.
 
 ### Database Migrations
+
 Database migrations are managed using Drizzle. Migration files are located in `drizzle/`.
 
 ## Project-Specific Conventions
@@ -66,11 +73,13 @@ Database migrations are managed using Drizzle. Migration files are located in `d
 ## Examples
 
 ### Adding a New Route
+
 1. Create a new route file in `src/routes/`.
 2. Define the route and map it to a controller function.
 3. Update `src/index.js` to include the new route.
 
 ### Adding a New Service
+
 1. Create a new service file in `src/services/`.
 2. Implement the business logic.
 3. Update the relevant controller to use the new service.
